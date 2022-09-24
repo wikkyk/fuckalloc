@@ -1,0 +1,13 @@
+The Fuck All Alloc
+
+This is a simple memory allocator that always fails. In other
+words, it allocates Fuck All memory.
+
+Its malloc, calloc, and realloc always return NULL and set errno
+to ENOMEM.
+
+Helps you test if you really are checking the return values of
+malloc etc.
+
+Just link against libfuckalloc or LD_PRELOAD it and your memory
+allocations will fail.
